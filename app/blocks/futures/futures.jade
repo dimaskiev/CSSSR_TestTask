@@ -1,0 +1,15 @@
+mixin futures()
+	h2.section__title.title Какие у вас планы на будущее?
+	p.section__description.description
+		| Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+	ul.futures__list
+		ul.futures--list
+		each item, key in json.futures
+			li.futures--item 
+				label.label
+					if (json.futures__check[key] == 0)
+						input(type="radio" class="check__hide" name="futures")
+					else
+						input(type="radio" class="check__hide" name="futures" checked)
+					span.radio__fake
+					span= item

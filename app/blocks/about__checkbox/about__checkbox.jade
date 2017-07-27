@@ -1,0 +1,15 @@
+mixin about__checkbox()
+	h2.section__title.title__checkbox.title Расскажите о себе чекбоксами
+	p.section__description.description__checkbox.description
+		| Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+	.checkbox__list
+		ul.about__checkbox--list
+			each item, key in json.aboutcheckbox
+				li.about__checkbox--item
+					label.label
+						if (json.checkbox__cheked[key] == 0)
+							input(type="checkbox" class="check__hide")
+						else
+							input(type="checkbox" class="check__hide" checked)
+						span.checkbox__fake
+						span.checkbox__text= item

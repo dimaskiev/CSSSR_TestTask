@@ -1,6 +1,10 @@
 .about__info
 	margin-bottom 75px
 	display block
+
+.about__info--list
+	overflow hidden
+
 .about__info--item
 	margin-bottom 25px
 	
@@ -9,23 +13,20 @@
 	font-size name__size
 
 .data
-	position relative
-	top -10px
 	display inline-block
 	font-family data__font
-	font-size data__size	
+	font-size data__size
+
 	
-	
+.data-underline
 	&::after
-		width 100px
-		height 5px
+		position relative
+		top 15px
 		content ''
-		background url('../images/line.jpg')
-		background-repeat repeat-x
-		
-		
-		
-		
+		display inline-block
+		height 5px
+		background-image url(../images/sprites/decor.png)
+		background-position 0 0
 		
 
 .about__info--name

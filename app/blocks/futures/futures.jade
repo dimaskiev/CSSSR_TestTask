@@ -6,7 +6,7 @@ mixin futures()
 			each item, key in json.futures
 				li.futures__item 
 					label.label.label--radio
-						if (json.futures__check[key] == 0)
+						if (json.futures__check[key] === 0)
 							input(type="radio" class="radio__hide" name="futures")
 						else
 							input(type="radio" class="radio__hide" name="futures" checked)

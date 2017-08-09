@@ -7,7 +7,7 @@ mixin about__checkbox()
 			each item, key in json.aboutcheckbox
 				li.about__checkbox--item
 					label.label
-						if (json.checkbox__cheked[key] == 0)
+						if (json.checkbox__cheked[key] === 0)
 							input(type="checkbox" class="check__hide")
 						else
 							input(type="checkbox" class="check__hide" checked)

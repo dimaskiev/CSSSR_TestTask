@@ -1,1 +1,1 @@
-// LocalStorage
+console.log('common');

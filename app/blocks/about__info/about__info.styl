@@ -1,32 +1,45 @@
 .about__info
-	margin-bottom 75px
+	margin-bottom 35px
 	display block
 
+.about__info--name
+	position relative
+	top 11px
+	margin-right 15px
+
 .about__info--list
-	overflow hidden
+	 overflow hidden
 
 .about__info--item
 	margin-bottom 25px
-	
+
 .name
 	font-family name__font
 	font-size name__size
 
 .data
-	display inline-block
 	font-family data__font
 	font-size data__size
 
+.data__wrapper
+	display inline-block
+
+	// width 1500px
+
 	
 .data-underline
-	&::after
+	position relative
+	left 15px
+	&:after
 		position relative
-		top 15px
-		display inline-block
-		height 5px
-		content ''
-		background-image url(../images/sprites/decor.png)
-		background-position 0 0
-
-.about__info--name
-	margin-right 15px
+		left -15px
+		margin-bottom 15px
+		padding-bottom 4px
+		display block
+		width 1500%
+		text-decoration none
+		content ''		
+		background url(../images/line.png) repeat-x
+		background-position 100% 100%
+		
+ 

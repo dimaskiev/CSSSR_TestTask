@@ -8,8 +8,8 @@ mixin about__checkbox()
 				li.about__checkbox--item
 					label.label
 						if (json.checkbox__cheked[key] === 0)
-							input(type="checkbox" class="check__hide")
+							input(type="checkbox" class="check__hide" name="skillcheckbox" value=`${key}`)
 						else
-							input(type="checkbox" class="check__hide" checked)
+							input(type="checkbox" class="check__hide" name="skillcheckbox" value=`${key}` checked)
 						span.checkbox__fake
 						span.checkbox__text= item

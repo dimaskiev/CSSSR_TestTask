@@ -23,9 +23,8 @@ const changeCheck = () => {
 })('.check__hide');
 
 const linkCSSSR = $('.checkbox__text');
-console.log(linkCSSSR.length);
+
 for (let i = 0; i < linkCSSSR.length; i++) {
-    console.log(linkCSSSR[i].innerHTML);
     if (linkCSSSR[i].innerHTML === 'Читаю blog.csssr.ru') {
         linkCSSSR[i].innerHTML = 'Читаю <a class="csssr__link" href="http://blog.csssr.ru" target="_blank">blog.csssr.ru<a>';
     }

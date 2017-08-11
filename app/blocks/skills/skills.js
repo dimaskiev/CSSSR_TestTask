@@ -18,24 +18,48 @@ $(function() {
         return nearest;
     }
 
+    const storageSlider = localStorage.getItem('storageSlider');
+    if (localStorage.getItem('storageSlider')) {
+
+        $('.slider').slider({
+            value: storageSlider
+        });
+
+    }
+
+
     const slider = $('.slider').slider({
         orientation: 'horizontal',
         min: values[0],
         max: values[values.length - 1],
-        value: values[0],
+        value: storageSlider,
 
         slide: (event, ui) => {
+            if (localStorage.getItem('storageSlider')) {
+                const storageSlider = localStorage.getItem('storageSlider');
+                $('.slider').slider({
+                    value: storageSlider
+                });
+
+            }
+
             const includeLeft = event.keyCode !== $.ui.keyCode.RIGHT;
             const includeRight = event.keyCode !== $.ui.keyCode.LEFT;
             const value = findNearest(includeLeft, includeRight, ui.value);
+
             slider.slider('value', value);
 
-            /* $("#amount").val('$' + slider.slider('value'));  */
+            $('#inputskill').val('$' + slider.slider('value'));
+            localStorage.setItem('storageSlider', value);
+
+
+
+
             return false;
         }
     });
+    //  }
 
 
 
-    /* $("#amount").val('$' + slider.slider('value'));*/
 });

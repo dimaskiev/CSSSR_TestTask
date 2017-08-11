@@ -21,9 +21,6 @@ if (localStorage.getItem('futuresRadio')) {
 }
 
 
-
-
-
 // выбранной кпопке добавляем класс
 $('input[name=futures]:checked').next('span').addClass('radio__fake--cheked');
 

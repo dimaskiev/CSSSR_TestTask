@@ -49,6 +49,7 @@
 
 	<body class="page">
 		<div class="wrapper">
+			<!-- block header-->
 			<section class="header">
 				<div class="header__logo">
 					<img src="assets/images/logo.png" class="header__image" />
@@ -60,6 +61,8 @@
 					<img src="assets/images/stamp.png" class="header__image" />
 				</div>
 			</section>
+			<!-- end block header-->
+			<!-- block info-->
 			<section class="about__info">
 				<ul class="about__info--list">
 					<li class="about__info--item">
@@ -94,6 +97,8 @@
 					</li>
 				</ul>
 			</section>
+			<!-- end block info-->
+			<!-- block about checkbox-->
 			<section class="about__checkbox">
 				<h2 class="section__title title__checkbox title">Расскажите о себе чекбоксами</h2>
 				<p class="section__description description__checkbox description">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше
@@ -159,7 +164,7 @@
 						</li>
 						<li class="about__checkbox--item">
 							<label class="label">
-								<input type="checkbox" name="skillcheckbox" value="8" class="check__hide" />
+								<input type="checkbox" name="skillcheckbox" value="8" checked="checked" class="check__hide" />
 								<span class="checkbox__fake"></span>
 								<span class="checkbox__text">Знаком с Webpack</span>
 							</label>
@@ -187,7 +192,7 @@
 						</li>
 						<li class="about__checkbox--item">
 							<label class="label">
-								<input type="checkbox" name="skillcheckbox" value="12" class="check__hide" />
+								<input type="checkbox" name="skillcheckbox" value="12" checked="checked" class="check__hide" />
 								<span class="checkbox__fake"></span>
 								<span class="checkbox__text">Изучаю React</span>
 							</label>
@@ -201,7 +206,7 @@
 						</li>
 						<li class="about__checkbox--item">
 							<label class="label">
-								<input type="checkbox" name="skillcheckbox" value="14" class="check__hide" />
+								<input type="checkbox" name="skillcheckbox" value="14" checked="checked" class="check__hide" />
 								<span class="checkbox__fake"></span>
 								<span class="checkbox__text">Использую Git</span>
 							</label>
@@ -215,7 +220,7 @@
 						</li>
 						<li class="about__checkbox--item">
 							<label class="label">
-								<input type="checkbox" name="skillcheckbox" value="16" checked="checked" class="check__hide" />
+								<input type="checkbox" name="skillcheckbox" value="16" class="check__hide" />
 								<span class="checkbox__fake"></span>
 								<span class="checkbox__text">Читаю blog.csssr.ru</span>
 							</label>
@@ -237,6 +242,8 @@
 					</ul>
 				</div>
 			</section>
+			<!-- end block about checkbox-->
+			<!-- block js skill-->
 			<section class="skills">
 				<h2 class="section__title title__skill title">Уровень владения JavaScript</h2>
 				<div class="slider"></div>
@@ -248,6 +255,8 @@
 					<li class="skill__item skill__item-fourth skill__text">Пишу сложный JS c нуля</li>
 				</ul>
 			</section>
+			<!-- end block js skill-->
+			<!-- block about words-->
 			<section class="about__words">
 				<h2 class="section__title title__words title">Расскажите о себе словами</h2>
 				<p class="section__description description__words description">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово,
@@ -257,6 +266,8 @@
 						интересной, разнообразной и с постоянными вызовами. </span>
 				</div>
 			</section>
+			<!-- end block about words-->
+			<!-- block futures-->
 			<section class="futures">
 				<h2 class="section__title title-futures title">Какие у вас планы на будущее?</h2>
 				<p class="section__description description-futures description">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
@@ -292,12 +303,15 @@
 					</ul>
 				</p>
 			</section>
+			<!-- end block futures-->
+			<!-- block data-->
 			<section class="footer">
 				<span class="footer__title title">Дата заполнения</span>
 				<div class="data__wrapper">
 					<span class="footer__data data underline-footer">12.08.2017</span>
 				</div>
 			</section>
+			<!-- end block data-->
 		</div>
 		<script src="assets/scripts/app.min.js"></script>
 	</body>

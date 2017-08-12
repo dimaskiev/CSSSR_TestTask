@@ -42,3 +42,5 @@ node_modules
 PSD
 npm-debug.log
 .happypack/
+finalArhive
+.publish
